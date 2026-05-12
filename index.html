@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
     <title>CV - Alfredo Affinita</title>
     <style>
         /* Reset default styles */
@@ -10,6 +12,19 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+        }
+
+        .maintenance-overlay {
+            position: fixed;
+            inset: 0;
+            background: #111;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            z-index: 9999;
+            padding: 2rem;
         }
 
         body {
@@ -158,90 +173,96 @@
         }
     </style>
 </head>
-<body>
-    <header>
-        <h1>Alfredo Affinita</h1>
-        <p>Student at <a href="https://thecourtyardislington.org" style="color:white">The Courtyard Islington</a>, Sixth Form</p>
-        <p>ㅤ</p>
-        <p><a href="mailto:alfredo.affinita@icloud.com" style="color:white">alfredo.affinita@icloud.com</a></p>
-        <p><a href="sms:+447832965988" style="color:white">+447832965988</a></p>
-    </header>
+
+    <!-- TEMPORARY SITE OVERLAY-->
+
+
+<div class="maintenance-overlay">
+        <div class="maintenance-box">
+            <h1>Back Soon</h1>
+            <p>This page is undergoing updates. Please check back soon.</p>
+        </div>
+    </div>
+
+    <!-- MAIN SITE CONTENT BELOW (COMMENTED OUT @ LINE 189)-->
+
 <!--
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-        </ul>
-    </nav>
--->
-    <main class="container">
-        <section id="about" class="about">
-            <h2>About Me</h2>
-            <p>I am a full-time student with excellent customer service skills, having spent hundreds of hours attending to software sales queries. I am detail-oriented, determined and have a keen interest in leveraging new technology to increase efficiency and approach problems with innovative solutions. I am seeking an entry level role in any industry to gain valuable professional work experience.</p>
-            <br></br>
-        </section>
+    <body>
+        <header>
+            <h1>Alfredo Affinita</h1>
+            <p>Student at <a href="https://thecourtyardislington.org" style="color:white">The Courtyard Islington</a></p>
+            <p>ㅤ</p>
+            <p><a href="mailto:alfredo.affinita@icloud.com" style="color:white">alfredo.affinita@icloud.com</a></p>
+            <p><a href="sms:+447832965988" style="color:white">+447832965988</a></p>
+        </header>
+        
+        <main class="container">
+            <section id="about" class="about">
+                <h2>About Me</h2>
+                <p>I am a full-time student with excellent customer service skills, having spent hundreds of hours attending to software sales queries. I am detail-oriented, determined and have a keen interest in leveraging new technology to increase efficiency and approach problems with innovative solutions. I am seeking an entry level role in any industry to gain valuable professional work experience.</p>
+                <br></br>
+            </section>
 
-        <section id="skills">
-            <h2>Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <h3>Programming Languages</h3>
-                    <p>Proficient in HTML / CSS, JavaScript, Java</p>
+            <section id="skills">
+                <h2>Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <h3>Programming Languages</h3>
+                        <p>Proficient in HTML / CSS, JavaScript, Java</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Clear communicator</h3>
+                        <p>From years of experience working as part of a team in community management and technical support to my time on set working with directors and film crew, I've developed an understanding of the importance of being an effective communicator and team player.</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Customer Service</h3>
+                        <p>Since 2021, I have been working with specialised software resellers to ensure a frictionless user experience for hundreds, closing in on thousands of customers.</p>
+                    </div>
+                    
                 </div>
-                <div class="skill-card">
-                    <h3>Clear communicator</h3>
-                    <p>From years of experience working as part of a team in community management and technical support to my time on set working with directors and film crew, I've developed an understanding of the importance of being an effective communicator and team player.</p>
-                </div>
-                <div class="skill-card">
-                    <h3>Customer Service</h3>
-                    <p>Since 2021, I have been working with specialised software resellers to ensure a frictionless user experience for hundreds, closing in on thousands of customers.</p>
-                </div>
-                
-            </div>
-        </section>
+            </section>
 
-        <section id="projects">
-            <h2>Work Experience</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <p><a href="https://zappi.io">
-                    <img src="zappi latest.png" alt="The official Zappi company logo." class="project-img">
-                    </a></p>
-                    <div class="project-info">
-                        <h4>April 2023 - May 2023</h4>
-                        <h3>Research Project Group - Zappi (Market research and consumer insights), work placement</h3>
-                        <p>As part of a work placement group, we were tasked with a market research project to develop a line of hypothetical consumer products, with the objective of determining which was the most popular across a range of consumer demographics. This involved utilising generative AI tools to mock up various packaging designs, alongside creative brainstorming to establish a selection of unique snack flavours.</p>
+            <section id="projects">
+                <h2>Work Experience</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <p><a href="https://zappi.io">
+                        <img src="zappi latest.png" alt="The official Zappi company logo." class="project-img">
+                        </a></p>
+                        <div class="project-info">
+                            <h4>April 2023 - May 2023</h4>
+                            <h3>Research Project Group - Zappi (Market research and consumer insights), work placement</h3>
+                            <p>As part of a work placement group, we were tasked with a market research project to develop a line of hypothetical consumer products, with the objective of determining which was the most popular across a range of consumer demographics. This involved utilising generative AI tools to mock up various packaging designs, alongside creative brainstorming to establish a selection of unique snack flavours.</p>
+                        </div>
                     </div>
+                    <div class="project-card">
+                        <img src="globe.png" alt="November 2021 - present" class="project-img">
+                        <div class="project-info">
+                            <h4>November 2021 - present</h4>
+                            <h3>Remote Voluntary Technical Support - Various (Software Distribution)</h3>
+                            <p>Worked with hundreds of buyers to provide customer service and technical support, general troubleshooting and further assistance. Also assisted in community management and provided logistical support.</p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <p><a href="https://thewaltdisneycompany.eu">
+                        <img src="disney.png" alt="The official Disney company logo." class="project-img">
+                        </a></p>
+                        <div class="project-info">
+                            <h4>2016 - 2019</h4>
+                            <h3>Child Actor - The Walt Disney Company (Commercials, extra work)</h3>
+                            <p>Appeared in multiple toy commercials in a range of principle and supporting roles. This involved working closely with the director and crew; working with other actors as part of a team. See more below:</p>
+                            <p>ㅤ   </p>
+                            <p><a href="https://youtu.be/TTuMdw3e2lY" style="font-style: italic; font-weight: bold;">Hasbro's Transformers</a></p>
+                            <p><a href="https://youtu.be/mD8cXa9ZvG4" style="font-style: italic; font-weight: bold;">Star Wars - Play Your Part</a></p>
+                            <p><a href="https://youtu.be/NpmzHAaEO5Q" style="font-style: italic; font-weight: bold;">Star Wars - Galaxy of Adventures</a></p>
+                        </div>
                 </div>
-                <div class="project-card">
-                    <img src="globe.png" alt="November 2021 - present" class="project-img">
-                    <div class="project-info">
-                        <h4>November 2021 - present</h4>
-                        <h3>Remote Voluntary Technical Support - Various (Software Distribution)</h3>
-                        <p>Worked with hundreds of buyers to provide customer service and technical support, general troubleshooting and further assistance. Also assisted in community management and provided logistical support.</p>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <p><a href="https://thewaltdisneycompany.eu">
-                    <img src="disney.png" alt="The official Disney company logo." class="project-img">
-                    </a></p>
-                    <div class="project-info">
-                        <h4>2016 - 2019</h4>
-                        <h3>Child Actor - The Walt Disney Company (Commercials, extra work)</h3>
-                        <p>Appeared in multiple toy commercials in a range of principle and supporting roles. This involved working closely with the director and crew; working with other actors as part of a team. See more below:</p>
-                        <p>ㅤ   </p>
-                        <p><a href="https://youtu.be/TTuMdw3e2lY" style="font-style: italic; font-weight: bold;">Hasbro's Transformers</a></p>
-                        <p><a href="https://youtu.be/mD8cXa9ZvG4" style="font-style: italic; font-weight: bold;">Star Wars - Play Your Part</a></p>
-                        <p><a href="https://youtu.be/NpmzHAaEO5Q" style="font-style: italic; font-weight: bold;">Star Wars - Galaxy of Adventures</a></p>
-                    </div>
-            </div>
-        </section>  
-    </main>
+            </section>  
+        </main>
 
-    <footer>
-        <p>&copy; 2025 Alfredo Affinita. All rights reserved.</p>
-        <p>Questions? <a href="mailto:alfredo.affinita@icloud.com" style="color:white">Shoot me an email.</a></p>
-    </footer>
-</body>
+        <footer>
+            <p>&copy; 2025 Alfredo Affinita. All rights reserved.</p>
+            <p>Questions? <a href="mailto:alfredo.affinita@icloud.com" style="color:white">Send me an email.</a></p>
+        </footer>
+    </body>
 </html>
